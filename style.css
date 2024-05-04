@@ -1,0 +1,156 @@
+
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 10px;
+    transition: var(--transition);
+}
+
+.cart{
+    position: fixed;
+    inset-block: 0;
+    right: 0;
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    transform: translateX(100%);
+    transition: var(--transition);
+    background: white;
+}
+ .cart-btn{
+    padding: 3px 8px;
+    background: transparent;
+    color: inherit;
+    position: relative;
+ }
+
+ .cart-btn .bi{
+    font-size: 1.5rem;
+ }
+
+.cart-qty{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    transform: var(50%, -50%);
+    background: black;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.cart-header {
+    position: relative;
+    text-align: center;
+    padding-block: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-close{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cart-body{
+    display: grid;
+    align-content: start;
+    gap: 20px;
+    padding-block: 20px;
+    overflow: auto;
+}
+
+.cart-empty{
+    text-align: center;
+    padding-block: 20px;
+    font-size: 1.25rem;
+}
+
+.cart-item{
+    display: flex;
+    gap: 10px;
+}
+
+.cart-item img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.cart-item-detail{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.cart-item-detail h3{
+    font-size: 1rem;
+}
+
+.cart-item-amount{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.25rem;
+}
+
+.cart-item-amount .bi{
+    cursor: pointer;
+    opacity: 0.25;
+}
+
+.cart-item-amount .bi:hover{
+    opacity: 1;
+}
+
+.cart-item-amount .qty{
+    width: 2rem;
+    text-align: center;
+}
+
+.cart-item-price{
+    margin-top: auto;
+}
+
+.cart-footer{
+    border-top: 1px solid #ddd;
+    padding-block: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.cart-footer div {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25rem;
+}
+
+.cart-footer strong{
+    font-weight: 500;
+    color: var(--color4);
+}
+
+.cart-footer button{
+    padding-block: 10px;
+    text-transform: uppercase;
+}
+
+.cart-clear{
+    background: black;
+    color: white;
+}
+
+.cart-clear:hover{
+    filter: brightness(1.75);
+}
