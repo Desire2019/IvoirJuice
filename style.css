@@ -8,153 +8,80 @@ button{
     transition: var(--transition);
 }
 
-.cart{
-    position: fixed;
-    inset-block: 0;
-    right: 0;
-    width: 100%;
-    max-width: 420px;
-    padding: 20px;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    transform: translateX(100%);
-    transition: var(--transition);
-    background: white;
-}
- .cart-btn{
-    padding: 3px 8px;
-    background: transparent;
-    color: inherit;
-    position: relative;
- }
 
- .cart-btn .bi{
-    font-size: 1.5rem;
- }
 
-.cart-qty{
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: white;
-    transform: var(50%, -50%);
-    background: black;
-    padding: 0 5px;
-    border-radius: 3px;
-}
 
-.cart-header {
-    position: relative;
-    text-align: center;
-    padding-block: 10px;
-    border-bottom: 1px solid #ddd;
-}
 
-.cart-close{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
+
+/* Style pour le bouton du panier */
+.cart-btn {
+    background-color: transparent;
+    border: none;
     cursor: pointer;
+    position: relative;
 }
 
-.cart-body{
-    display: grid;
-    align-content: start;
-    gap: 20px;
-    padding-block: 20px;
-    overflow: auto;
+/* Style pour l'icône du panier */
+.cart-btn i {
+    font-size: 1.5rem; /* Taille de l'icône ajustée */
+    color: #333; /* Couleur de l'icône */
 }
 
-.cart-empty{
-    text-align: center;
-    padding-block: 20px;
-    font-size: 1.25rem;
+/* Style pour la quantité dans le panier */
+.cart-qty {
+    position: absolute;
+    top: -6px; /* Ajustement pour rapprocher du panier */
+    right: 1px; /* Ajustement pour rapprocher du panier */
+    background-color: #000; /* Couleur de fond noire */
+    color: #fff; /* Couleur du texte blanc */
+    border-radius: 50%; /* Pour donner une forme de cercle */
+    padding: 3px; /* Espace intérieur ajusté */
+    font-size: 0.7rem; /* Taille du texte ajustée */
+    min-width: 16px; /* Largeur minimale ajustée */
+    text-align: center; /* Alignement du texte */
 }
 
-.cart-item{
-    display: flex;
-    gap: 10px;
+
+
+
+/* Styles pour les éléments du panier */
+.cart-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
-.cart-item img{
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
-.cart-item-detail{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.cart-item-detail h3{
-    font-size: 1rem;
-}
-
-.cart-item-amount{
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.25rem;
-}
-
-.cart-item-amount .bi{
-    cursor: pointer;
-    opacity: 0.25;
-}
-
-.cart-item-amount .bi:hover{
-    opacity: 1;
-}
-
-.cart-item-amount .qty{
-    width: 2rem;
-    text-align: center;
-}
-
-.cart-item-price{
-    margin-top: auto;
-}
-
-.cart-footer{
-    border-top: 1px solid #ddd;
-    padding-block: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.cart-footer div {
-    grid-column: 1 / -1;
+.cart-item-details {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.25rem;
 }
 
-.cart-footer strong{
-    font-weight: 500;
-    color: var(--color4);
+
+.cart-footer {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
 }
 
-.cart-footer button{
-    padding-block: 10px;
-    text-transform: uppercase;
+.cart-summary {
+    font-weight: bold;
 }
 
-.cart-clear{
-    background: black;
-    color: white;
-}
-
-.cart-clear:hover{
-    filter: brightness(1.75);
-}
-
-#cart-vide{
-    height: 350px;
+.cart-actions button {
+    margin-left: 10px;
 }

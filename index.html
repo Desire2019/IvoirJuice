@@ -11,7 +11,7 @@
         /*  ----Couleur de div de la banniere je voulais voir a la taille du div----
         #banniere{
             background-color: #E8E8E8;
-            border-radius: 5px;
+             -radius: 5px;
         } */
         
     </style>
@@ -32,6 +32,9 @@
                         <a href="#nosjus" class="nav-link active"><b>Nos Jus</b></a>
                     </div>
                     <div class="ml-auto">
+                        <a href="#nous" class="nav-link active"><b>Nous</b></a>
+                    </div>
+                    <div class="ml-auto">
                         <button class="cart-btn">
                             <a href="#sidebar" class="nav-link active" data-bs-toggle="offcanvas" 
                         role="button" aria-controls="sidebar">
@@ -43,6 +46,8 @@
                 </div>
             </nav>
         </header>
+        
+
         <section id="accueil" class="p-1 m-2">
             <div class="container-lg" id="banniere">
                 <div class="row justify-content-center align-items-center">
@@ -50,131 +55,138 @@
                         <h1>
                             <div class="display-2"><b>Ivoir'Juice</b></div>
                         </h1>
-                        <p class="lead my-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="lead my-3 text-muted">Laissez-vous séduire par notre palette de saveurs authentiques. Cliquez ici pour découvrir notre menu et passer votre commande sans plus attendre.</p>
                         <a href="#nosjus" class="btn btn-success btn-sm">Je  commande</a>
                     </div> 
-                    <div class="col-md-5 text-center d-inline-block align-top">
+                    <div class="col-md-5 text-center d-md-block d-none align-top">
                         <img class="img-fluid" src="images/banniere.jpg" alt="banniere" width="250" height="500" class="d-inline-block align-top mr-2">
                     </div>
                 </div>
             </div>
         </section>
+        
+        
+        
+        
+        
         <section class="bg-light mt-5" id="nosjus">
             <div class="container-lg">
                 <div class="text-center">
                     <h2>Nos Jus</h2>
-                    <p class="lead text-muted">Choisir ce que tu veux boire, nous on te livre</p>
+                    <p class="lead text-muted">Choisissez ce que vous voulez boire, nous on vous livre</p>
                 </div>
 
-
-
+                <div class="row row-cols-1 row-cols-md-4 g-4 my-2 align-items-stretch justify-content-center text-center">
+                        <div class="col mx-3">
+                          <img src="images/ananas.jpg" alt="Jus ananas" width="75" height="150">
+                          <h4 class="card-title"><b>Bissap</b></h4>
+                              <p class="display-8 text-muted">description et de la description</p>
+                              <p class="display-8 my-1 fw-bold">1500 FCFA</p>
+                              <a href="#sidebar" class="btn btn-outline-success btn-sm" data-bs-toggle="offcanvas" 
+                              role="button" aria-controls="sidebar">Ajouter au Panier</a>
+                        </div>
+                        <div class="col mx-3">
+                            <img src="images/ananas.jpg" alt="Jus ananas" width="75" height="150">
+                            <h4 class="card-title"><b>Bissap</b></h4>
+                                <p class="display-8 text-muted">description et de la description</p>
+                                <p class="display-8 my-1 fw-bold">1500 FCFA</p>
+                                <a href="#sidebar" class="btn btn-outline-success btn-sm" data-bs-toggle="offcanvas" 
+                                role="button" aria-controls="sidebar">Ajouter au Panier</a>
+                        </div>
+                        <div class="col mx-3">
+                            <img src="images/ananas.jpg" alt="Jus ananas" width="75" height="150">
+                            <h4 class="card-title"><b>Bissap</b></h4>
+                                <p class="display-8 text-muted">description et de la description</p>
+                                <p class="display-8 my-1 fw-bold">1500 FCFA</p>
+                                <a href="#sidebar" class="btn btn-outline-success btn-sm" data-bs-toggle="offcanvas" 
+                                role="button" aria-controls="sidebar">Ajouter au Panier</a>
+                          </div>
+                          <div class="col mx-3 mt-5">
+                              <img src="images/bissap.jpg" alt="Jus ananas" width="150" height="150">
+                              <h4 class="card-title"><b>Bissap</b></h4>
+                                  <p class="display-8 text-muted">description et de la description</p>
+                                  <p class="display-8 my-1 fw-bold">1500 FCFA</p>
+                                  <a href="#sidebar" class="btn btn-outline-success btn-sm" data-bs-toggle="offcanvas" 
+                                  role="button" aria-controls="sidebar">Ajouter au Panier</a>
+                          </div>
+                          <div class="col mt-5">
+                            <img src="images/bissap.jpg" alt="Jus ananas" width="150" height="150">
+                            <h4 class="card-title"><b>Bissap</b></h4>
+                                <p class="display-8 text-muted">description et de la description</p>
+                                <p class="display-8 my-1 fw-bold">1500 FCFA</p>
+                                <a href="#sidebar" class="btn btn-outline-success btn-sm" data-bs-toggle="offcanvas" 
+                                role="button" aria-controls="sidebar">Ajouter au Panier</a>
+                          </div>
+                          <div class="col mt-5">
+                            <img src="images/bissap.jpg" alt="Jus ananas" width="150" height="150">
+                              <h4 class="card-title"><b>Bissap</b></h4>
+                                  <p class="display-8 text-muted">description et de la description</p>
+                                  <p class="display-8 my-1 fw-bold">1500 FCFA</p>
+                                  <a href="#sidebar" class="btn btn-outline-success btn-sm" data-bs-toggle="offcanvas" 
+                                  role="button" aria-controls="sidebar">Ajouter au Panier</a>
+                          </div>
+                          <div class="col mt-5">
+                            <img src="images/laitcaille.jpg" alt="Jus ananas" width="100" height="150">
+                            <h4 class="card-title"><b>Bissap</b></h4>
+                                <p class="display-8 text-muted">description et de la description</p>
+                                <p class="display-8 my-1 fw-bold">1500 FCFA</p>
+                                <a href="#sidebar" class="btn btn-outline-success btn-sm" data-bs-toggle="offcanvas" 
+                                role="button" aria-controls="sidebar">Ajouter au Panier</a>
+                          </div>
+                          <div class="col mt-5">
+                              <img src="images/laitcaille.jpg" alt="Jus ananas" width="100" height="150">
+                              <h4 class="card-title"><b>Bissap</b></h4>
+                                  <p class="display-8 text-muted">description et de la description</p>
+                                  <p class="display-8 my-1 fw-bold">1500 FCFA</p>
+                                  <a href="#sidebar" class="btn btn-outline-success btn-sm" data-bs-toggle="offcanvas" 
+                                  role="button" aria-controls="sidebar">Ajouter au Panier</a>
+                          </div>
+                       
+                      
+                    
+                </div>
+                    
                 
                 
+                        
+                
+                        
+
+
+                        
                     
-
-
-
-                <div class="row my-5 align-items-center justify-content-center g-3">
-                    <div class="w-25 p-3 h-75 d-inline-block" style="width: 120px;">
-                        <div class="card border-0">
-                            <div class="card-body text-center py-4">
-                                <img src="images/bissap.jpg" alt="bissap" width="150" height="150">                            
-                              <h4 class="card-title"><b>Bissap</b></h4>
-                              <p class="display-8 text-muted">description et de la description</p>
-                              <p class="display-8 my-1 fw-bold">1500 FCFA</p>
-                              <a href="#sidebar" class="btn btn-outline-success" data-bs-toggle="offcanvas" 
-                              role="button" aria-controls="sidebar">Ajouter au Panier</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-25 p-3 h-75 d-inline-block" style="width: 120px;">
-                        <div class="card border-0">
-                            <div class="card-body text-center py-4">
-                                <img src="images/gnamankoudji.jpg" alt="gnamankoudji" width="150" height="150">                            
-                              <h4 class="card-title"><b>Gnamankoudji</b></h4>
-                              <p class="display-8 text-muted">description et de la description</p>
-                              <p class="display-8 my-1 fw-bold">1500 FCFA</p>
-                              <a href="#sidebar" class="btn btn-outline-success" data-bs-toggle="offcanvas" 
-                              role="button" aria-controls="sidebar">Ajouter au Panier</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-25 p-3 h-75 d-inline-block" style="width: 120px;">
-                        <div class="card border-0">
-                            <div class="card-body text-center py-4">
-                                <img src="images/baobab.jpg" alt="baobab" width="100" height="150">                            
-                              <h4 class="card-title"><b>Baobab</b></h4>
-                              <p class="display-8 text-muted">description et de la description</p>
-                              <p class="display-8 my-1 fw-bold">1500 FCFA</p>
-                              <a href="#sidebar" class="btn btn-outline-success" data-bs-toggle="offcanvas" 
-                              role="button" aria-controls="sidebar">Ajouter au Panier</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-25 p-3 h-75 d-inline-block" style="width: 120px;">
-                        <div class="card border-0">
-                            <div class="card-body text-center py-4">
-                                <img src="images/orange.jpg" alt="orange" width="150" height="150">                            
-                              <h4 class="card-title"><b>Orange</b></h4>
-                              <p class="display-8 text-muted">description et de la description</p>
-                              <p class="display-8 my-1 fw-bold">1500 FCFA</p>
-                              <a href="#sidebar" class="btn btn-outline-success" data-bs-toggle="offcanvas" 
-                              role="button" aria-controls="sidebar">Ajouter au Panier</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-25 p-3 h-75 d-inline-block" style="width: 120px;">
-                        <div class="card border-0">
-                            <div class="card-body text-center py-4">
-                                <img src="images/ananas.jpg" alt="ananas" width="100" height="150">                            
-                              <h4 class="card-title"><b>Ananas</b></h4>
-                              <p class="display-8 text-muted">description et de la description</p>
-                              <p class="display-8 my-1 fw-bold">1500 FCFA</p>
-                              <a href="#sidebar" class="btn btn-outline-success" data-bs-toggle="offcanvas" 
-                              role="button" aria-controls="sidebar">Ajouter au Panier</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-25 p-3 h-75 d-inline-block" style="width: 120px;">
-                        <div class="card border-0">
-                            <div class="card-body text-center py-4">
-                                <img src="images/passion.jpg" alt="passion" width="150" height="150">                            
-                              <h4 class="card-title"><b>Passion</b></h4>
-                              <p class="display-8 text-muted">description et de la description</p>
-                              <p class="display-8 my-1 fw-bold">1500 FCFA</p>
-                              <a href="#sidebar" class="btn btn-outline-success" data-bs-toggle="offcanvas" 
-                              role="button" aria-controls="sidebar">Ajouter au Panier</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-25 p-3 h-75 d-inline-block" style="width: 120px;">
-                        <div class="card border-0">
-                            <div class="card-body text-center py-4">
-                                <img src="images/degue.jpg" alt="degue" width="100" height="150">                            
-                              <h4 class="card-title"><b>Degue</b></h4>
-                              <p class="display-8 text-muted">description et de la description</p>
-                              <p class="display-8 my-1 fw-bold">1500 FCFA</p>
-                              <a href="#sidebar" class="btn btn-outline-success" data-bs-toggle="offcanvas" 
-                              role="button" aria-controls="sidebar">Ajouter au Panier</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-25 p-3 h-75 d-inline-block" style="width: 120px;">
-                        <div class="card border-0">
-                            <div class="card-body text-center py-4">
-                                <img src="images/laitcaille.jpg" alt="laitcaille" width="150" height="150">                            
-                              <h4 class="card-title"><b>Bissap</b></h4>
-                              <p class="display-8 text-muted">description et de la description</p>
-                              <p class="display-8 my-1 fw-bold">1500 FCFA</p>
-                              <a href="#sidebar" class="btn btn-outline-success" data-bs-toggle="offcanvas" 
-                              role="button" aria-controls="sidebar">Ajouter au Panier</a>
-                            </div>
-                        </div>
-                    </div>
-                    
+                
+                
+      
                       
                 
+                
+            </div>
+        </section>
+        <section id="nous" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Notre Équipe</h2>
+                <!-- Introduction sur votre équipe -->
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h3>Qui sommes-nous ?</h3>
+                        <p>Samson a eu l'idée initiale de créer Ivoir'Juice, motivé par son amour pour les jus naturels et son désir d'apporter une touche d'innovation au marché des boissons. Sydney, avec son expertise en gestion d'entreprise, a contribué à façonner la vision et la stratégie de l'entreprise. Quant à moi, Desire, j'ai rejoint l'équipe pour apporter mon expertise en marketing numérique et en développement de marque. Notre passion commune pour la santé et le bien-être nous guide dans notre mission de fournir des jus frais et savoureux à nos clients, tout en soutenant les communautés locales.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Insérez une photo de votre équipe ici -->
+                        <img src="images/ceo.jpg" alt="Notre Équipe" class="img-fluid">
+                    </div>
+                </div>
+                <!-- Présentation des dames qui font les jus -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Notre Équipe de Talentueuses Artisanes</h3>
+                        <p>Nous sommes fiers de notre équipe de talentueuses artisanes qui préparent avec passion et expertise les jus délicieux que nous proposons à nos clients. Leur savoir-faire et leur dévouement sont au cœur de la qualité de nos produits, et nous sommes reconnaissants de les avoir dans notre équipe. Ces femmes extraordinaires apportent une attention méticuleuse à chaque étape du processus de fabrication, de la sélection des ingrédients frais à la mise en bouteille des jus finis. Leur engagement envers la qualité et l'authenticité est ce qui distingue véritablement Ivoir'Juice.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Insérez une photo des dames qui font les jus ici -->
+                        <img src="images/femmes.jpg" alt="Dames qui font les jus" class="img-fluid mb-3">
+                    </div>
                 </div>
             </div>
         </section>
@@ -183,34 +195,29 @@
 
 
 
-
-
     <!--le code du sidebar pour le panier-->
-    <div class="offcanvas offcanvas-end cart" tabindex="-1" id="sidebar"
-     aria-labelledby="sidebar-label">
-     <div class="cart-header">
-        <h5 class="offcanvas-title" id="sidebar-label">Panier</h5>
-        <button type="button" class="btn-close text-md-start" data-bs-dismiss="offcanvas" 
-        aria-label="Fermer"></button>
-     </div>
-     <div class="cart-body">
-        <div class="cart-empty">Votre panier est vide</div>
+    <div class="offcanvas offcanvas-end cart" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebar-label">Panier</h5>
+            <button type="button" class="btn-close text-md-start" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-empty">Votre panier est vide</div>
 
-        <!-- div de cart vide, les items se touchaient un peu trop-->
-        <div class="container" id="cart-vide"></div>
-        
-        <div class="cart-footer">
-            <div>
-                <strong>Total</strong>
-                <span class="cart-total">0</span>
-            </div>
-            <div class="d-grid gap-2 d-md-block text-end">
-                <button class="btn btn-dark btn-sm" type="reset" value="Reset">Effacer</button>
-                <button class="btn btn-success btn-sm" type="submit" value="Submit">Commander</button>
-            </div>
+            <!-- div de cart vide, les items se touchaient un peu trop-->
+            <div class="container" id="cart-vide"></div>
             
         </div>
-     </div>
+        <div class="cart-footer">
+            <hr>
+            <div class="cart-summary">
+                <div>Total: <span class="cart-total">0</span></div>
+            </div>
+            <div class="cart-actions">
+                <button class="btn btn-dark btn-sm" type="reset">Effacer</button>
+                <button class="btn btn-success btn-sm" type="submit"><a href="checkout.html" class="nav-link">Commander</a></button>
+            </div>
+        </div>
     </div>
 
 
@@ -219,7 +226,8 @@
 
 
 
-
+    
+    
 
 
 
@@ -235,16 +243,13 @@
     <footer class="bg-dark text-center text-white">
         <div class="container p-4 pb-0">
           <section class="mb-4">
-            <!-- Facebook -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
                 <i class="bi bi-facebook"></i>
             </a>
-            <!-- Instagram -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
                 <i class="bi bi-instagram"></i>
             </a>
           </section>
-          <!-- Section: Social media -->
         </div>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2020 Copyright:
@@ -253,5 +258,6 @@
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>

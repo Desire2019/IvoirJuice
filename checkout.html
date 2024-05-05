@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation commande</title>
+    <style>
+        section{
+            padding: 60px 0px;
+        }
+        /*  ----Couleur de div de la banniere je voulais voir a la taille du div----
+        #banniere{
+            background-color: #E8E8E8;
+             -radius: 5px;
+        } */
+        
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container col-md-9">
+        <header>
+            <nav class="navbar navbar-expand-lg  p-2 bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/bissap.jpg" alt="Company Logo" width="30" height="30" class="d-inline-block align-top mr-2">
+                        <b><i>Ivoir'Juice</i></b>
+                    </a>
+                    <div class="ml-auto">
+                        <a href="#nosjus" class="nav-link active"><b>Nos Jus</b></a>
+                    </div>
+                    <div class="ml-auto">
+                        <a href="#nous" class="nav-link active"><b>Notre Equipe</b></a>
+                    </div>
+                    <div class="ml-auto">
+                        <button class="cart-btn">
+                            <a href="#sidebar" class="nav-link active" data-bs-toggle="offcanvas" 
+                        role="button" aria-controls="sidebar">
+                            <i class="bi bi-bag"></i>
+                            <small class="cart-qty">0</small>
+                        </a>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <section class="bg-light" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Passer une commande</h2>
+                <form id="order-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nom complet</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Adresse de facturation</label>
+                                <textarea class="form-control" id="address" name="address" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Numéro de téléphone</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Adresse email</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-success">Passer la commande</button>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Poppup apres validation de la commande -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Merci pour votre commande !</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Votre commande a été passée avec succès. Nous vous contacterons pour les détails de la livraison.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal"><a href="index.html" class="nav-link active">Fermer</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="bi bi-instagram"></i>
+            </a>
+          </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white" href="index.html">Ivoir'Juice</a>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('order-form');
+            const modal = new bootstrap.Modal(document.getElementById('exampleModalCenter'));
+            const submitButton = form.querySelector('button[type="submit"]');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const formData = new FormData(form);
+                let isValid = true;
+
+                formData.forEach((value, key) => {
+                    if (!value) {
+                        isValid = false;
+                    }
+                });
+
+                if (isValid) {
+                    modal.show();
+                    // Effacer les champs du formulaire après avoir affiché le modal
+                    form.reset();
+                    // Désactiver le bouton de soumission du formulaire
+                    submitButton.disabled = true;
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>

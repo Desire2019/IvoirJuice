@@ -1,0 +1,40 @@
+//validation formulaire pour le popup de remerciemment
+        const orderForm = document.getElementById('order-form');
+        orderForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Réinitialiser le formulaire
+            orderForm.reset();
+            // Affiche le popup de remerciement
+            const modal = new bootstrap.Modal(document.getElementById('exampleModalCenter'));
+            modal.show();
+        });
+
+
+        //bloquer le retour en arriere
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('order-form');
+            const modal = new bootstrap.Modal(document.getElementById('exampleModalCenter'));
+            const submitButton = form.querySelector('button[type="submit"]');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const formData = new FormData(form);
+                let isValid = true;
+
+                formData.forEach((value, key) => {
+                    if (!value) {
+                        isValid = false;
+                    }
+                });
+
+                if (isValid) {
+                    modal.show();
+                    // Effacer les champs du formulaire après avoir affiché le modal
+                    form.reset();
+                    // Désactiver le bouton de soumission du formulaire
+                    submitButton.disabled = true;
+                }
+            });
+        });
+
+        
