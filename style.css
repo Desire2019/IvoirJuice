@@ -154,3 +154,7 @@ button{
 .cart-clear:hover{
     filter: brightness(1.75);
 }
+
+#cart-vide{
+    height: 350px;
+}
